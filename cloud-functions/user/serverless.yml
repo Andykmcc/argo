@@ -5,7 +5,7 @@ provider:
   runtime: nodejs
   project: thursday-204720
   # the path to the credentials file needs to be absolute
-  credentials: ~/.gcloud/thursday/thursday-0a00858371f7.json
+  credentials: ~/.gcloud/thursday/thursday.json
 
 plugins:
   - serverless-google-cloudfunctions
