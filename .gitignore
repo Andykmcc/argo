@@ -31,7 +31,7 @@ coverage
 
 # nyc test coverage
 .nyc_output
-
+`
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+# Serverless
+.serverless
+.env
+tmp
+.coveralls.yml
+
+# Google
+keyfile.json
+
+# node-waf configuration
+.lock-wscript
