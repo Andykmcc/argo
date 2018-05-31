@@ -1,5 +1,5 @@
 'use strict';
 
-exports.http = (request, response) => {
+exports.create = (request, response) => {
   response.status(200).send('Create!');
 };

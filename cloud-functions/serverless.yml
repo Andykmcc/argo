@@ -20,9 +20,11 @@ package:
 
 functions:
   create:
-    handler: http
+    handler: create
     events:
-      - http: path
+      - http:
+          path: /
+          method: get
 
   # NOTE: the following uses an "event" event (pubSub event in this case).
   # Please create the corresponding resources in the Google Cloud
