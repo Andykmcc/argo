@@ -1,0 +1,22 @@
+{
+  "name": "thursday-backend",
+  "version": "0.1.0",
+  "description": "server side API for Thursday app",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest test",
+    "start:prod": "node ./bin/www",
+    "start": "nodemon --inspect ./bin/www"
+  },
+  "author": "Andy McCoy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "jest": "^23.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
