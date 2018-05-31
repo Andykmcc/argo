@@ -1,5 +1,5 @@
 const express = require('express');
-// const v1 = require('./v1');
+const user = require('./user');
 
 const router = express.Router();
 
@@ -7,6 +7,6 @@ router.get('/health', (req, res) => {
   res.json({status: 'OK'});
 });
 
-// router.use('/v1', v1);
+router.use('/user', user);
 
 module.exports = router;
