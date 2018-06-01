@@ -1,0 +1,16 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+      - POSTGRES_USERNAME=${PG_USERNAME}
+      - POSTGRES_DB_NAME=${PG_DATABASE}
+    volumes:
+      # (Optional) Persist Postgres data to a path in the repository.
+      - ./.postgres-data:/var/lib/postgresql/data
+    ports:
+      # Expose the default Postgres port on localhost so we can connect to it
+      # with PG Commander et. al.
+      - 5432:5432

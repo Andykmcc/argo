@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 /************************************************
  * START IMPORT ENDPOINTS
  */
-const apiRouterV1 = require('./routerV1');
+const apiRouterV1 = require('./router');
 /*
  * END IMPORT ENDPOINTS
  */
@@ -39,8 +39,6 @@ app.use(bodyParser.json())
 //     .catch((err) => { done(err); })
 //   }
 // ));
-
-app.use('/static', express.static('assets'));
 
 app.use('/api/v1', apiRouterV1);
 /*

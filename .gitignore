@@ -31,7 +31,7 @@ coverage
 
 # nyc test coverage
 .nyc_output
-`
+
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
@@ -71,3 +71,7 @@ keyfile.json
 
 # node-waf configuration
 .lock-wscript
+
+
+# DB storage
+.postgres-data
